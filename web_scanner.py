@@ -11,6 +11,9 @@ class WebScanner:
         self.target = target
         self.threads = "40" 
 
+    def change_target(self,target):
+        self.target = target
+
     def directory_scanner(self, port_list):
         all_results = {}
         self.wordlist = DIR_DICTIONARY
